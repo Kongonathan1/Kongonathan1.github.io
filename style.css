@@ -667,5 +667,9 @@ footer {
 @media screen and (max-width: 480px) {
     .contact {
         text-align: left;
+        padding: 0;
+    }
+    .contact ul{
+        padding: 0;
     }
 }
