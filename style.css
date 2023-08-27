@@ -187,153 +187,6 @@ img {
     width: 70%;
     animation: html 10s;
 }
-/*
-@keyframes html {
-    0%{
-        width: 0%;
-    }
-    100% {
-        width: 70%;
-    } 
-}
-
-
-.css {
-    width: 60%;
-    animation: css 10s;
-}
-@keyframes css {
-    0%{
-        width: 0%;
-    }
-    100% {
-        width: 60%;
-    } 
-}
-
-.bootstrap {
-    width: 40%;
-    animation: bootstrap 10s;
-}
-@keyframes bootstrap {
-    0%{
-        width: 0%;
-    }
-    100% {
-        width: 40%;
-    } 
-}
-
-
-
-.algorithme {
-    width: 40%;
-    animation: algorithme 10s;
-}
-@keyframes algorithme {
-    0%{
-        width: 0%;
-    }
-    100% {
-        width: 40%;
-    } 
-}
-
-.php {
-    width: 55%;
-    animation: php 10s;
-}
-@keyframes php {
-    0%{
-        width: 0%;
-    }
-    100% {
-        width: 55%;
-    } 
-}
-
-.composer {
-    width: 65%;
-    animation: composer 10s;
-}
-@keyframes composer {
-    0%{
-        width: 0%;
-    }
-    100% {
-        width: 65%;
-    } 
-}
-
-.symfony {
-    width: 45%;
-    animation: symfony 10s;
-}
-@keyframes symfony {
-    0%{
-        width: 0%;
-    }
-    100% {
-        width: 45%;
-    } 
-}
-
-
-.sass {
-    width: 40%;
-    animation: sass 10s;
-}
-@keyframes sass {
-    0%{
-        width: 0%;
-    }
-    100% {
-        width: 40%;
-    } 
-}
-
-
-.twig {
-    width: 40%;
-    animation: twig 10s;
-}
-@keyframes twig {
-    0%{
-        width: 0%;
-    }
-    100% {
-        width: 40%;
-    } 
-}
-
-
-.sql {
-    width: 50%;
-    animation: sql 10s;
-}
-@keyframes sql {
-    0%{
-        width: 0%;
-    }
-    100% {
-        width: 50%;
-    } 
-}
-
-.git {
-    width: 70%;
-    animation: git 10s;
-}
-@keyframes git {
-    0%{
-        width: 0%;
-    }
-    100% {
-        width: 70%;
-    } 
-}
-*/
-/**/
 
 .portfolio{
     padding: 50px;
@@ -809,5 +662,10 @@ footer {
     .nav-items a {
         margin-top: 15px;
         display: inline-block;
+    }
+}
+@media screen and (max-width: 480px) {
+    .contact {
+        text-align: left;
     }
 }
