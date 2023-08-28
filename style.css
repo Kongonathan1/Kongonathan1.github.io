@@ -24,7 +24,6 @@ img {
     background-color: rgb(18, 95, 190);
     padding-top: 25px;
     padding-bottom: 25px;
-    color: rgb(246, 91, 29);
     color: rgb(211, 164, 22);
     font-family: 'Book Antiqua';
     font-weight: 700;
@@ -90,6 +89,7 @@ img {
     font-family: 'Perpetua Titling MT';
     font-size: 32px;
     text-align: center;
+    margin-bottom: 15px;
 }
 
 .about_me {
@@ -187,6 +187,153 @@ img {
     width: 70%;
     animation: html 10s;
 }
+/*
+@keyframes html {
+    0%{
+        width: 0%;
+    }
+    100% {
+        width: 70%;
+    } 
+}
+
+
+.css {
+    width: 60%;
+    animation: css 10s;
+}
+@keyframes css {
+    0%{
+        width: 0%;
+    }
+    100% {
+        width: 60%;
+    } 
+}
+
+.bootstrap {
+    width: 40%;
+    animation: bootstrap 10s;
+}
+@keyframes bootstrap {
+    0%{
+        width: 0%;
+    }
+    100% {
+        width: 40%;
+    } 
+}
+
+
+
+.algorithme {
+    width: 40%;
+    animation: algorithme 10s;
+}
+@keyframes algorithme {
+    0%{
+        width: 0%;
+    }
+    100% {
+        width: 40%;
+    } 
+}
+
+.php {
+    width: 55%;
+    animation: php 10s;
+}
+@keyframes php {
+    0%{
+        width: 0%;
+    }
+    100% {
+        width: 55%;
+    } 
+}
+
+.composer {
+    width: 65%;
+    animation: composer 10s;
+}
+@keyframes composer {
+    0%{
+        width: 0%;
+    }
+    100% {
+        width: 65%;
+    } 
+}
+
+.symfony {
+    width: 45%;
+    animation: symfony 10s;
+}
+@keyframes symfony {
+    0%{
+        width: 0%;
+    }
+    100% {
+        width: 45%;
+    } 
+}
+
+
+.sass {
+    width: 40%;
+    animation: sass 10s;
+}
+@keyframes sass {
+    0%{
+        width: 0%;
+    }
+    100% {
+        width: 40%;
+    } 
+}
+
+
+.twig {
+    width: 40%;
+    animation: twig 10s;
+}
+@keyframes twig {
+    0%{
+        width: 0%;
+    }
+    100% {
+        width: 40%;
+    } 
+}
+
+
+.sql {
+    width: 50%;
+    animation: sql 10s;
+}
+@keyframes sql {
+    0%{
+        width: 0%;
+    }
+    100% {
+        width: 50%;
+    } 
+}
+
+.git {
+    width: 70%;
+    animation: git 10s;
+}
+@keyframes git {
+    0%{
+        width: 0%;
+    }
+    100% {
+        width: 70%;
+    } 
+}
+*/
+/**/
 
 .portfolio{
     padding: 50px;
@@ -204,36 +351,44 @@ img {
     background-color: rgb(240, 255, 255);
     overflow: hidden;
     z-index: 2;
-    width: 350px;
+    width: 100%;
     box-shadow: 0px 0px 20px rgba(0, 0, 0,0.4);
     transition: 2s; 
     border-radius: 10px;
     margin-right: 30px;
+    margin-bottom: 25px;
     text-align: justify;
     transition: all .4s;
+    display: flex;
 }
 .card-body{
-    padding: 8px;
+    padding: 25px;
 }
 .card:hover{
     box-shadow: 0px 0px 20px rgba(0, 0, 0,0.7);
 }
 .card-description{
+    position: relative;
     text-align: left;
     margin-bottom: 23px;
+    padding-bottom: 20px;
     margin-top: 7px;
     font-family: "Andalus";
     font-weight: 400;
     font-size: 18.5px;
 }
+.card-description a {
+    position: absolute;
+    right: 0;
+}
 .card-body-title{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 25px;
+    font-size: 30px;
     margin: 0;
     transition: .4s;
     text-align: center;
 }
-.card-body-title:hover{
+.card-description a :hover{
     color: rgb(211, 164, 22);
 }
 
@@ -623,6 +778,9 @@ footer {
     .skills {
         padding: 35px;
     }
+    .card-description a {
+        right: 50%;
+    }
 }
 
 @media screen and (max-width: 860px) {
@@ -662,14 +820,5 @@ footer {
     .nav-items a {
         margin-top: 15px;
         display: inline-block;
-    }
-}
-@media screen and (max-width: 480px) {
-    .contact {
-        text-align: left;
-        padding: 0;
-    }
-    .contact ul{
-        padding: 0;
     }
 }
