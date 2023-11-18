@@ -37,7 +37,6 @@ img {
 .logo {
     font-family: 'Castellar';
     font-size: 20px;
-    transform: translateX(-150%);
 }
 
 .navbar a{
