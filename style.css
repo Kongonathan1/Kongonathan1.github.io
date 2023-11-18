@@ -37,6 +37,7 @@ img {
 .logo {
     font-family: 'Castellar';
     font-size: 20px;
+    transform: translateX(-150%);
 }
 
 .navbar a{
@@ -797,10 +798,51 @@ footer {
         width: 100%;
     }
     .navbar {
-        position: static;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: fixed;
+        left: -5px;
+        width: 250px;
+        height: 100%;
+        background-color: linear-gradient(135deg, rgb(18, 95, 190), rgb(127, 191, 255));
+        color: rgb(211, 164, 22);
+        clip-path: circle(28px at 34px 40px);
+        transition: all .5s ease-in-out;
     }
     .banner {
         padding-top: 50px;
+    }
+    .header .open {
+        clip-path: circle(120% at 50% 50%);
+    }
+    .header .open .toggle-btn div:nth-child(1) {
+        rotate: 45deg;
+    }
+    .header .open .toggle-btn div:nth-child(3) {
+        rotate: -45deg;
+    }
+    .header .open .toggle-btn div:nth-child(2) {
+        opacity: 0;
+    }
+    .toggle-btn {
+        margin-top: 6px;
+        margin-left: 5px;
+        opacity: .7;
+        transition: opacity .4s ease-out;
+        cursor: pointer;
+    }
+    .toggle-btn:hover {
+        opacity: 1;
+    }
+    .toggle-btn div {
+        display: block;
+        width: 24px;
+        border: solid 1px rgb(211, 164, 22);
+        height: 3px;
+        transform-origin: 3px center;
+        margin-top: 3px;
+        transition: all .4s ease;
     }
     .others_container {
         display: block;
@@ -809,6 +851,10 @@ footer {
     .languages, .valeurs, .interest {
         width: 100%;
         margin-bottom: 25px;
+    }
+    .contact ul {
+        transform: translateX(-8%);
+        font-size: 20px;
     }
 }
 
